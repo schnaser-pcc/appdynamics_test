@@ -80,6 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
       stackTrace: StackTrace.current,
     );
     if (_counter > 5) {
+      // Delaying 1 minute to allow the messages to be sent
       print('!!!!!!!! Going to crash in 1 minute !!!!!!!!');
       await Future.delayed(const Duration(minutes: 1));
       // **********************************************
